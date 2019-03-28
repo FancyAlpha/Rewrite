@@ -1,4 +1,4 @@
-function import_content(file) {
+function import_content(file, id) {
     fetch(file)
         .then(function (response) {
             return response.text()
@@ -7,9 +7,20 @@ function import_content(file) {
             let parser = new DOMParser();
             let doc = parser.parseFromString(html, "text/html");
 
-            document.body.appendChild(doc.documentElement);
+            console.log(document);
+            document.getElementById(id).innerHTML = doc.documentElement.innerHTML;
+            //document.body.innerHTML += doc.documentElement.innerHTML;
         })
 }
+
+function import_files(file, id) {
+    $(id).load(file);
+}
+
+function import_template(file, id) {
+    $(id).load("/Rewrite/templates/" + file);
+}
+
 
 function import_content_head(file) {
     fetch(file)
@@ -20,21 +31,14 @@ function import_content_head(file) {
             let parser = new DOMParser();
             let doc = parser.parseFromString(html, "text/html");
 
-                document.head.appendChild(doc.documentElement);
+            document.head.innerHTML += doc.documentElement.innerHTML;
         })
 }
+//
+// function import_template(file) {
+//     import_content("/Rewrite/templates/" + file);
+// }
 
-
-function define_template(file, custom_element) {
-    fetch( file )
-        .then( stream => stream.text() )
-        .then( text =>
-            customElements.define( custom_element, class extends HTMLElement {
-                constructor() {
-                    super();
-                    this.attachShadow( { mode: 'open'} )
-                        .innerHTML = text
-                }
-            } )
-        )
+function import_template_head(file) {
+    import_content_head("/Rewrite/templates/" + file);
 }

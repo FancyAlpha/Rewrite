@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Rewrite</title>
-    <base href="Rewrite">
+    <base href="../Rewrite">
 
     <script src="js/content-query.js"></script>
 
@@ -17,6 +17,9 @@
 
 <div id="nav"></div>
 
+<div id="sidebar"></div>
+
+user settings
 
 <div id="foot"></div>
 <script
@@ -28,6 +31,7 @@
 <script>
     import_template("nav.html", "#nav");
     import_template("footer.html", "#foot");
+    import_template("dashboard_sidebar.html", "#sidebar");
 </script>
 
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
