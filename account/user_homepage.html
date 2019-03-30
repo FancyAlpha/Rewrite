@@ -17,9 +17,13 @@
 
 <div id="nav"></div>
 
-<div id="sidebar"></div>
+<main class="ui grid container">
+    <div id="sidebar"></div>
 
-user homepage
+    <div class="twelve wide stretched column">
+        <div class="ui segment">user homepage</div>
+    </div>
+</main>
 
 <div id="foot"></div>
 <script
@@ -32,6 +36,10 @@ user homepage
     import_template("nav.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
+
+    $( document ).ready(function() {
+        set_active("home");
+    });
 </script>
 
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>

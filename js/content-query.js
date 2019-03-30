@@ -42,3 +42,8 @@ function import_content_head(file) {
 function import_template_head(file) {
     import_content_head("/Rewrite/templates/" + file);
 }
+
+function set_active(id) {
+    let element = document.getElementById(id);
+    element.classList.add("active");
+}

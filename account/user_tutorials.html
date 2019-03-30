@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Rewrite</title>
-    <base href="Rewrite">
+    <base href="../Rewrite">
 
     <script src="js/content-query.js"></script>
 
@@ -18,7 +18,11 @@
 <div id="nav"></div>
 
 <main class="ui grid container">
-    about
+    <div id="sidebar"></div>
+
+    <div class="twelve wide stretched column">
+        <div class="ui segment">user tutorials</div>
+    </div>
 </main>
 
 <div id="foot"></div>
@@ -31,11 +35,12 @@
 <script>
     import_template("nav.html", "#nav");
     import_template("footer.html", "#foot");
+    import_template("dashboard_sidebar.html", "#sidebar");
 
-    $(document).ready (function() {
-        set_active("about");
+
+    $( document ).ready(function() {
+        set_active("tutorials");
     });
-
 </script>
 
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>

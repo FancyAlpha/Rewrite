@@ -1,6 +1,15 @@
-<div>
-    <ul>
-        <li><a href="account/user_homepage.html">Home</a></li>
-        <li><a href="account/user_settings.html">Settings</a></li>
-    </ul>
+
+<div class="four wide column">
+    <div class="ui vertical fluid tabular menu">
+        <a class="item" href="account/user_homepage.html"  id="home">Home</a>
+        <a class="item" href="account/user_contests.html"  id="contests">Contests</a>
+        <a class="item" href="account/user_tutorials.html" id="tutorials">Tutorials</a>
+        <a class="item" href="account/user_settings.html"  id="settings">Settings</a>
+    </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $('.tabular.menu .item').tab({history:false});
+    });
+</script>
