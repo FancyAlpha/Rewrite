@@ -1,3 +1,6 @@
+$fg: #F7A20B;
+
+
 /* Semantic UI has these classes, however they're only applicable to*/
 /* grids, containers, rows and columns.*/
 /* plus, there isn't any `mobile hidden`, `X hidden` class.*/
@@ -65,4 +68,12 @@
   }
 }
 
-@import "user_styles";
+@import "user_styles", "main_page";
+
+.bold {
+  font-weight: bold;
+}
+
+.ui.button.primary {
+  color: black;
+}
