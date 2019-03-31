@@ -18,7 +18,7 @@
 <div id="nav"></div>
 
 <main class="ui grid container">
-    <div id="sidebar"></div>
+    <div class="four wide column" id="sidebar"></div>
 
     <div class="twelve wide stretched column">
         <div class="ui segment">user settings</div>
@@ -34,12 +34,12 @@
 </script>
 
 <script>
-    import_template("nav.html", "#nav");
+    import_template("dashboard_navbar.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
 
 
-    $( document ).ready(function() {
+    $(window).on('load', function() {
         set_active("settings");
     });
 </script>
