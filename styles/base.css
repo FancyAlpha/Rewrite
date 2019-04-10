@@ -49,6 +49,16 @@
   [class*="widescreen hidden"],
   [class*="widescreen or lower hidden"] {
     display: none !important; } }
+.fade-bk {
+  background: #eeeeee; }
+
+.fade-primary-bk {
+  background: #fdedd1; }
+
+.no-gutter {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 .hidden.menu {
   display: none; }
 
@@ -133,5 +143,15 @@
 
 .ui.button.primary {
   color: black; }
+
+.ui.button.secondary {
+  color: #F7A20B;
+  background: black; }
+
+.primary-bk {
+  background: #F7A20B; }
+
+.primary-fg {
+  color: #F7A20B; }
 
 /*# sourceMappingURL=base.css.map */

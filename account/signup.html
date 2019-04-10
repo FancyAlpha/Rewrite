@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="primary-bk">
 
 <style type="text/css">
     body {
@@ -22,11 +22,8 @@
     body > .grid {
         height: 100%;
     }
-    .image {
-        margin-top: -100px;
-    }
     .column {
-        max-width: 450px;
+        max-width: 550px;
     }
 </style>
 
@@ -34,29 +31,64 @@
 
     <div class="column">
 
-        <h2 class="ui teal image header">
+        <h2 class="ui header">
             <div class="content">
-                Log-in to your account
+                Sign-up for a new account
             </div>
         </h2>
         <form class="ui large form">
+
             <div class="ui stacked segment">
+
+                <h4 class="ui dividing header">User Information</h4>
+
+                <!-- Name fields -->
                 <div class="field">
-                    <div class="ui left icon input">
-                        <i class="user icon"></i>
-                        <input type="text" name="email" placeholder="E-mail address">
+<!--                    <label class="left aligned">Name</label>-->
+                    <div class="two fields">
+                        <!-- First name -->
+                        <div class="field">
+                            <div class="input">
+                                <input type="text" name="fname" placeholder="First Name">
+                            </div>
+                        </div>
+
+                        <!-- Last name -->
+                        <div class="field">
+                            <div class="input">
+                                <input type="text" name="lname" placeholder="Last Name">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Email field -->
+                <div class="field">
+<!--                    <label for="email">Email Address</label>-->
+                    <div class="ui left icon input">
+                        <i class="mail icon"></i>
+                        <input type="email" id="email" placeholder="E-mail address">
+                    </div>
+                </div>
+                <!-- password field -->
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Enter Password">
                     </div>
                 </div>
-                <a href="account/user_homepage.html" class="ui fluid large teal submit button">Sign up</a>
+                <!-- re-enter password -->
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input type="password" name="password" placeholder="Renter Password">
+                    </div>
+                </div>
+
+                <input type="submit" formaction="account/user_homepage.html" value="sign up" class="ui fluid large secondary submit button">
             </div>
 
-            <div class="ui error message"></div>
+            <div class="ui error message">The form is invalid</div>
 
         </form>
 

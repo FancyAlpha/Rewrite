@@ -1,0 +1,12 @@
+.fade-bk {
+  background: #eeeeee;
+}
+
+.fade-primary-bk {
+  background: lighten($fg, 40%);
+}
+
+.no-gutter {
+  margin-left: -15px;
+  margin-right: -15px;
+}

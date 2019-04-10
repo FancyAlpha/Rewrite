@@ -13,15 +13,71 @@
 
 </head>
 
-<body>
+<body class="fade-bk">
 
 <div id="nav"></div>
 
-<main class="ui grid container">
-    <div class="four wide column" id="sidebar"></div>
+<main class="ui grid vertically padded container">
+    <div class="four wide column no-gutter" id="sidebar"></div>
 
-    <div class="twelve wide stretched column">
-        <div class="ui segment">user tutorials</div>
+    <div class="twelve wide stretched column no-gutter">
+        <h1 class="ui header">user tutorials</h1>
+
+        <div class="ui cards">
+            <div class="ui card">
+                <div class="image">
+<!--                    <img src="/images/avatar2/large/kristy.png">-->
+                    <div class="ui placeholder">
+                        <div class="rectangle image"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="header">Kristy</a>
+                    <div class="meta">
+                        <span class="date">Joined in 2013</span>
+                    </div>
+                    <div class="description">
+                        Kristy is an art director living in New York.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <div class="image">
+<!--                    <img src="/images/avatar2/large/kristy.png">-->
+                    <div class="ui placeholder">
+                        <div class="rectangle image"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="header">Kristy</a>
+                    <div class="meta">
+                        <span class="date">Joined in 2013</span>
+                    </div>
+                    <div class="description">
+                        Kristy is an art director living in New York.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <div class="image">
+<!--                    <img src="/images/avatar2/large/kristy.png">-->
+                    <div class="ui placeholder">
+                        <div class="rectangle image"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <a class="header">Kristy</a>
+                    <div class="meta">
+                        <span class="date">Joined in 2013</span>
+                    </div>
+                    <div class="description">
+                        Kristy is an art director living in New York.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -37,8 +93,6 @@
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
 
-
-    //$( document ).ready(function() {
     $(window).on('load', function() {
         set_active("tutorials");
     });

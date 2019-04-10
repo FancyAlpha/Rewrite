@@ -13,18 +13,17 @@
 
 </head>
 
-<body>
+<body class="fade-bk">
 
 <div id="nav"></div>
 
-<main class="ui grid container">
-    <div class="four wide column" id="sidebar"></div>
+<main class="ui grid vertically padded container">
+    <div class="four wide column no-gutter" id="sidebar"></div>
 
-    <div class="twelve wide stretched column">
+    <div class="twelve wide stretched column no-gutter">
         <div class="ui segment">user settings</div>
     </div>
 </main>
-
 
 <div id="foot"></div>
 <script
@@ -37,7 +36,6 @@
     import_template("dashboard_navbar.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
-
 
     $(window).on('load', function() {
         set_active("settings");

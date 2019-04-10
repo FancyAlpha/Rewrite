@@ -77,3 +77,16 @@ $fg: #F7A20B;
 .ui.button.primary {
   color: black;
 }
+
+.ui.button.secondary {
+  color: $fg;
+  background: black;
+}
+
+.primary-bk {
+  background: $fg;
+}
+
+.primary-fg {
+  color: $fg;
+}
