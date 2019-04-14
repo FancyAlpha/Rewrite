@@ -68,6 +68,27 @@ $fg: #F7A20B;
   }
 }
 
+::selection {
+  background: black;
+  color: $fg;
+}
+
+.hidden-only {
+  display: none !important;
+}
+
+.borderless {
+  border: none !important;
+}
+
+.fixed.menu {
+  transition: background 0.5s;
+}
+
+.white-bk {
+  background: white !important;
+}
+
 @import "user_styles", "main_page";
 
 .bold {
@@ -76,6 +97,10 @@ $fg: #F7A20B;
 
 .ui.button.primary {
   color: black;
+}
+
+.ui.button.white {
+  background: white !important;
 }
 
 .ui.button.secondary {
@@ -90,3 +115,7 @@ $fg: #F7A20B;
 .primary-fg {
   color: $fg;
 }
+
+//.ui.secondary.pointing.menu .item {
+//  align-self: center !important;
+//}

@@ -1,18 +1,24 @@
-<div class="ui menu">
+<div class="ui huge secondary pointing borderless fixed menu">
     <div class="ui container">
-        <a class="item" href="index.html"><img src="assets/rewrite-dark.png" alt="Rewrite logo" style="width: 150px; height: auto;"></a>
 
-        <!-- only on desktops -->
-        <a href="pricing.html" class="item mobile hidden" id="pricing">Pricing</a>
-        <a href="about.html" class="item mobile hidden" id="about">About</a>
+        <div class="left menu">
+            <a class="item" href="index.html">
+                <img src="assets/rewrite-gray.png" alt="Rewrite logo" id="nav-logo1" style="width: 150px; height: auto;">
+                <img src="assets/rewrite-dark.png" class="hidden-only" alt="Rewrite logo" id="nav-logo2" style="width: 150px; height: auto;">
+            </a>
+
+            <!-- only on desktops -->
+            <a href="pricing.html" class="link item mobile hidden" id="pricing">Pricing</a>
+            <a href="about.html" class="link item mobile hidden" id="about">About</a>
+        </div>
 
         <div class="right menu">
-            <div class="item tablet or lower hidden">
-                <div class="ui icon input"><input type="text" placeholder="Search..."/><i class="search icon"></i></div>
-            </div>
+<!--            <div class="item tablet or lower hidden">-->
+<!--                <div class="ui icon input"><input type="text" placeholder="Search..."/><i class="search icon"></i></div>-->
+<!--            </div>-->
 
-            <div class="item mobile hidden"><a href="account/signup.html" class="ui primary button">Sign Up</a></div>
-            <div class="item mobile hidden"><a href="account/login.html" class="ui button">Login</a></div>
+            <div class="item mobile hidden"><a href="account/signup.html" class="ui primary button" id="nav-signup">Sign Up</a></div>
+            <div class="item mobile hidden"><a href="account/login.html" class="ui basic black button">Login</a></div>
         </div>
         <!-- end only on desktops -->
 
@@ -37,6 +43,25 @@
 </div>
 
 <script>
+    $(function () {
+
+        $(document).scroll(function () {
+            let $nav = $(".fixed.menu");
+            $nav.toggleClass('borderless', $(this).scrollTop() < $nav.height());
+            $nav.toggleClass('white-bk', $(this).scrollTop() > $nav.height());
+            $nav.toggleClass('white-bk', $(this).scrollTop() > $nav.height());
+
+            let $signup_button = $("#nav-signup");
+            $signup_button.toggleClass('white', $(this).scrollTop() < $nav.height());
+
+            let $nav_logo_init = $("#nav-logo1");
+            $nav_logo_init.toggleClass('hidden-only', $(this).scrollTop() > $nav.height());
+
+            let $nav_logo_scroll = $("#nav-logo2");
+            $nav_logo_scroll.toggleClass('hidden-only', $(this).scrollTop() < $nav.height());
+        });
+    });
+
     $('.ui.dropdown')
         .dropdown();
 </script>

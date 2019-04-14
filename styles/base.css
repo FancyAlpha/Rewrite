@@ -49,6 +49,22 @@
   [class*="widescreen hidden"],
   [class*="widescreen or lower hidden"] {
     display: none !important; } }
+::selection {
+  background: black;
+  color: #F7A20B; }
+
+.hidden-only {
+  display: none !important; }
+
+.borderless {
+  border: none !important; }
+
+.fixed.menu {
+  transition: background 0.5s; }
+
+.white-bk {
+  background: white !important; }
+
 .fade-bk {
   background: #eeeeee; }
 
@@ -143,6 +159,9 @@
 
 .ui.button.primary {
   color: black; }
+
+.ui.button.white {
+  background: white !important; }
 
 .ui.button.secondary {
   color: #F7A20B;
