@@ -44,6 +44,6 @@ function import_template_head(file) {
 }
 
 function set_active(id) {
-    let element = document.getElementById(id);
-    element.classList.add("active");
+    $(id).addClass("active");
+
 }
