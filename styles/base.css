@@ -56,6 +56,12 @@
 .hidden-only {
   display: none !important; }
 
+.no.margin {
+  margin: 0 !important; }
+
+.no.padding {
+  padding: 0 !important; }
+
 .borderless {
   border: none !important; }
 
@@ -78,11 +84,16 @@
 .hidden.menu {
   display: none; }
 
+.top-spacing {
+  margin-top: 5em !important; }
+
+.padding-around {
+  padding: 3em !important; }
+
 .masthead {
   background: #F7A20B !important; }
 
 .masthead.segment {
-  min-height: 700px;
   padding: 1em 0em; }
 
 .masthead .logo.item img {
@@ -92,8 +103,6 @@
   margin-left: 0.5em; }
 
 .masthead h1.ui.header {
-  margin-top: 3em;
-  margin-bottom: 0em;
   font-size: 4em;
   font-weight: bold; }
 
@@ -135,15 +144,7 @@
 
 @media only screen and (max-width: 700px) {
   .masthead.segment {
-    min-height: 350px; }
-
-  .masthead h1.ui.header {
-    font-size: 2em;
-    margin-top: 1.5em; }
-
-  .masthead h2 {
-    margin-top: 0.5em;
-    font-size: 1.5em; } }
+    min-height: 350px; } }
 .bold {
   font-weight: bold; }
 
@@ -158,9 +159,9 @@
   background: black; }
 
 .primary-bk {
-  background: #F7A20B; }
+  background: #F7A20B !important; }
 
 .primary-fg {
-  color: #F7A20B; }
+  color: #F7A20B !important; }
 
 /*# sourceMappingURL=base.css.map */

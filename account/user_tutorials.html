@@ -17,6 +17,8 @@
 
 <div id="nav"></div>
 
+<div id="progressbar"></div>
+
 <main class="ui grid vertically padded container">
     <div class="four wide column no-gutter" id="sidebar"></div>
 
@@ -92,6 +94,7 @@
     import_template("dashboard_navbar.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
+    import_template("dashboard_progressbar.html", "#progressbar");
 
     $(window).on('load', function() {
         set_active("#tutorials");

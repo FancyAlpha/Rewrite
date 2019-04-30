@@ -17,11 +17,102 @@
 
 <div id="nav"></div>
 
+<div id="progressbar"></div>
+
 <main class="ui grid vertically padded container">
     <div class="four wide column no-gutter" id="sidebar"></div>
 
-    <div class="twelve wide stretched column  no-gutter">
-        <div class="ui segment">user homepage</div>
+    <div class="twelve wide stretched column no-gutter">
+        <div class="ui four column stackable doubling padded grid segment">
+            <!-- Actual stuff goes here -->
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui red ribbon label">Published</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 1</h2>
+                    <p>Description/progress</p>
+
+                    <div class="ui buttons">
+                        <button class="ui circular facebook icon button">
+                            <i class="facebook icon"></i>
+                        </button>
+                        <button class="ui circular twitter icon button">
+                            <i class="twitter icon"></i>
+                        </button>
+                        <button class="ui circular grey icon button">
+                            <i class="mail icon"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui blue ribbon label">In Progress</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 2</h2>
+                    <p>Description/progress</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui green ribbon label">Started</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 3</h2>
+                    <p>Description/progress</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui green ribbon label">Started</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 4</h2>
+                    <p>Description/progress</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui green ribbon label">Started</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 5</h2>
+                    <p>Description/progress</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui piled segment">
+
+                    <a class="ui green ribbon label">Started</a>
+
+                    <div class="ui placeholder">
+                        <div class="image"></div>
+                    </div>
+                    <h2>Book 6</h2>
+                    <p>Description/progress</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
 
@@ -36,10 +127,13 @@
     import_template("dashboard_navbar.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
+    import_template("dashboard_progressbar.html", "#progressbar");
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         set_active("#home");
     });
+
+
 </script>
 
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>

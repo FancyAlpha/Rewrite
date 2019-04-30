@@ -77,6 +77,14 @@ $fg: #F7A20B;
   display: none !important;
 }
 
+.no.margin {
+  margin: 0 !important;
+}
+
+.no.padding {
+  padding: 0 !important;
+}
+
 .borderless {
   border: none !important;
 }
@@ -109,11 +117,11 @@ $fg: #F7A20B;
 }
 
 .primary-bk {
-  background: $fg;
+  background: $fg !important;
 }
 
 .primary-fg {
-  color: $fg;
+  color: $fg !important;
 }
 
 //.ui.secondary.pointing.menu .item {

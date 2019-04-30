@@ -17,11 +17,49 @@
 
 <div id="nav"></div>
 
+<div id="progressbar"></div>
+
 <main class="ui grid vertically padded container">
     <div class="four wide column no-gutter" id="sidebar"></div>
 
     <div class="twelve wide stretched column no-gutter">
-        <div class="ui segment">user settings</div>
+        <div class="ui segment padding-around">
+            <!-- Actual stuff goes here-->
+            <h2>user settings</h2>
+            <div class="ui grid">
+
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Where is thanos?
+                    </div>
+                    <div class="content">
+                        <p class="transition hidden">A thanos is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                    </div>
+                </div>
+
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Who is thanos?
+                    </div>
+                    <div class="content">
+                        <p class="transition hidden">A thanos is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                    </div>
+                </div>
+
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        I'll do you one better. Why is thanos?
+                    </div>
+                    <div class="content">
+                        <p class="transition hidden">A thanos is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
 
@@ -36,14 +74,18 @@
     import_template("dashboard_navbar.html", "#nav");
     import_template("footer.html", "#foot");
     import_template("dashboard_sidebar.html", "#sidebar");
+    import_template("dashboard_progressbar.html", "#progressbar");
 
     $(window).on('load', function() {
         set_active("#settings");
+
+        $('.ui.accordion').accordion();
     });
 </script>
 
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 <script src="semantic/dist/semantic.min.js"></script>
+
 </body>
 
 </html>
