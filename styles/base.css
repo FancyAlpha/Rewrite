@@ -90,6 +90,15 @@
 .padding-around {
   padding: 3em !important; }
 
+.margin-around {
+  margin: 1em !important; }
+
+.padding-under {
+  padding-bottom: 2em; }
+
+.margin-under {
+  padding-bottom: 3em !important; }
+
 .masthead {
   background: #F7A20B !important; }
 
@@ -141,6 +150,11 @@
 
 .secondary.pointing.menu .toc.item {
   display: none; }
+
+.money-style {
+  font-weight: bold !important;
+  font-size: 2em !important;
+  line-height: 1em; }
 
 @media only screen and (max-width: 700px) {
   .masthead.segment {
