@@ -87,6 +87,21 @@
 .top-spacing {
   margin-top: 5em !important; }
 
+.center-align {
+  text-align: center !important; }
+
+.blue-bk .header, .red-bk .header, .green-bk .header {
+  color: white !important; }
+
+.blue-bk {
+  background: #2A5095 !important; }
+
+.red-bk {
+  background: #960000 !important; }
+
+.green-bk {
+  background: #4E7F2D !important; }
+
 .padding-around {
   padding: 3em !important; }
 
